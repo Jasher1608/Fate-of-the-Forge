@@ -22,7 +22,7 @@ public class UpgradeController : MonoBehaviour
 
     private void Update()
     {
-        ironBarText.text = "Iron bar: " + ironBar._quantity;
+        ironBarText.text = "Purchased: " + ironBar._quantity;
         moneyText.text = "$" + InventoryManager.money;
     }
 
