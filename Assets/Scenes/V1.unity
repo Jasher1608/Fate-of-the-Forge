@@ -792,6 +792,7 @@ MonoBehaviour:
   ironBar: {fileID: 1767697854292271907}
   moneyText: {fileID: 122827187}
   ironBarText: {fileID: 2040543659}
+  ironBarOwnedText: {fileID: 1034430265}
 --- !u!114 &631492110
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -804,6 +805,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20f43ffe862649346825436f1dbe3975, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  generators:
+  - {fileID: 1767697854292271907}
 --- !u!4 &631492111
 Transform:
   m_ObjectHideFlags: 0
@@ -1293,7 +1296,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 938328030}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 631492110}
+        m_TargetAssemblyTypeName: InventoryManager, Assembly-CSharp
+        m_MethodName: Produce
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &938328030
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1332,6 +1347,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 938328027}
   m_CullTransparentMesh: 1
+--- !u!114 &1034430265 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6908542178817913651, guid: 78ef53be826da0e40bb9e654858dc5d9, type: 3}
+  m_PrefabInstance: {fileID: 1767697854292271905}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1037897314
 GameObject:
   m_ObjectHideFlags: 0
@@ -2129,6 +2155,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: IronBar
       objectReference: {fileID: 0}
+    - target: {fileID: 8239238546118211491, guid: 78ef53be826da0e40bb9e654858dc5d9, type: 3}
+      propertyPath: UIController
+      value: 
+      objectReference: {fileID: 631492109}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

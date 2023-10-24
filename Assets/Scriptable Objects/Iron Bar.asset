@@ -15,5 +15,5 @@ MonoBehaviour:
   quantity: 1
   baseBuyPrice: 3.738
   priceGrowth: 1.07
-  basePower: 1
+  baseProduction: 1
   buyPrice: 3.99966

@@ -8,8 +8,14 @@ public class GeneratorMono : MonoBehaviour
     [SerializeField] Generator generator;
     [SerializeField] private Slider milestoneProgress;
 
+    [SerializeField] private UIController UIController;
+
+    public GeneratorType generatorType;
+
     public int _quantity;
     public float buyPrice;
+    public int production;
+    public float productionMultiplier = 1f;
 
     private int nextMilestone;
     private int lastMilestone = 0;
@@ -19,6 +25,7 @@ public class GeneratorMono : MonoBehaviour
         CalculateNext();
         CalculateNextMilestone();
         _quantity = generator.quantity;
+        production = Mathf.FloorToInt((generator.baseProduction * _quantity) * productionMultiplier);
         milestoneProgress.maxValue = nextMilestone;
         milestoneProgress.value = _quantity;
     }
@@ -40,7 +47,10 @@ public class GeneratorMono : MonoBehaviour
         if (CanUpgrade())
         {
             _quantity += 1;
+            UIController.UpdatePurchased();
+            production = Mathf.FloorToInt((generator.baseProduction * _quantity) * productionMultiplier);
             InventoryManager.money -= buyPrice;
+            UIController.UpdateMoney();
             CalculateNext();
             milestoneProgress.value = _quantity;
             if (_quantity >= nextMilestone && nextMilestone != 400)
@@ -67,8 +77,57 @@ public class GeneratorMono : MonoBehaviour
             {
                 nextMilestone = milestones[i];
                 lastMilestone = milestones[i - 1];
+                
+                // Production multiplier
+                switch (i)
+                {
+                    case 1:
+                        productionMultiplier = 1;
+                        break;
+                    case 2:
+                        productionMultiplier = 1.25f;
+                        break;
+                    case 3:
+                        productionMultiplier = 1.5f;
+                        break;
+                    case 4:
+                        productionMultiplier = 1.75f;
+                        break;
+                    case 5:
+                        productionMultiplier = 2;
+                        break;
+                    case 6:
+                        productionMultiplier = 2.25f;
+                        break;
+                }
+                production = Mathf.FloorToInt((generator.baseProduction * _quantity) * productionMultiplier);
                 return;
             }
         }
     }
+
+    public void Produce()
+    {
+        switch (generatorType)
+        {
+            case GeneratorType.Iron:
+                InventoryManager.ironBars += production;
+                break;
+            case GeneratorType.Silver:
+                InventoryManager.silverBars += production;
+                break;
+            case GeneratorType.Gold:
+                InventoryManager.goldBars += production;
+                break;
+        }
+
+        UIController.UpdateOwned();
+    }
+}
+
+public enum GeneratorType
+{
+    Iron,
+    Silver,
+    Gold
 }
