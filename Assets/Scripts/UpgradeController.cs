@@ -5,20 +5,9 @@ using TMPro;
 
 public class UpgradeController : MonoBehaviour
 {
-    [SerializeField] private List<GeneratorMono> generators = new List<GeneratorMono>();
-
     [SerializeField] private GeneratorMono ironBar;
     [SerializeField] private TextMeshProUGUI moneyText;
     [SerializeField] private TextMeshProUGUI ironBarText;
-
-    private void Start()
-    {
-        foreach (GeneratorMono generator in generators)
-        {
-            generator.CalculateNext();
-        }
-        Instantiate(ironBar);
-    }
 
     private void Update()
     {
