@@ -59,30 +59,16 @@ public class GeneratorMono : MonoBehaviour
 
     private void CalculateNextMilestone()
     {
-        if (_quantity >= 0 && _quantity < 25)
+        int[] milestones = { 0, 25, 50, 100, 200, 400 };
+
+        for (int i = 1; i < milestones.Length; i++)
         {
-            nextMilestone = 25;
-            lastMilestone = 0;
-        }
-        else if (_quantity >= 25 && _quantity < 50)
-        {
-            nextMilestone = 50;
-            lastMilestone = 25;
-        }
-        else if (_quantity >= 50 && _quantity < 100)
-        {
-            nextMilestone = 100;
-            lastMilestone = 50;
-        }
-        else if (_quantity >= 100 && _quantity < 200)
-        {
-            nextMilestone = 200;
-            lastMilestone = 100;
-        }
-        else if (_quantity >= 200 && _quantity < 400)
-        {
-            nextMilestone = 400;
-            lastMilestone = 200;
+            if (_quantity >= milestones[i - 1] && _quantity < milestones[i])
+            {
+                nextMilestone = milestones[i];
+                lastMilestone = milestones[i - 1];
+                return;
+            }
         }
     }
 }
