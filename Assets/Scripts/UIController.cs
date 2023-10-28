@@ -8,11 +8,23 @@ public class UIController : MonoBehaviour
 {
     [SerializeField] private InventoryManager inventory;
     
+    [Header("Iron Bar")]
     [SerializeField] private GeneratorMono ironBar;
-    [SerializeField] private TextMeshProUGUI moneyText;
     [SerializeField] private TextMeshProUGUI ironBarText;
     [SerializeField] private TextMeshProUGUI ironBarOwnedText;
 
+    [Header("Silver Bar")]
+    [SerializeField] private GeneratorMono silverBar;
+    [SerializeField] private TextMeshProUGUI silverBarText;
+    [SerializeField] private TextMeshProUGUI silverBarOwnedText;
+
+    [Header("Gold Bar")]
+    [SerializeField] private GeneratorMono goldBar;
+    [SerializeField] private TextMeshProUGUI goldBarText;
+    [SerializeField] private TextMeshProUGUI goldBarOwnedText;
+
+    [Header("Other UI")]
+    [SerializeField] private TextMeshProUGUI moneyText;
     [SerializeField] private Slider clickSlider;
 
     private void Start()
@@ -30,11 +42,15 @@ public class UIController : MonoBehaviour
     public void UpdatePurchased()
     {
         ironBarText.text = "Purchased: " + ironBar._quantity;
+        silverBarText.text = "Purchased: " + silverBar._quantity;
+        goldBarText.text = "Purchased: " + goldBar._quantity;
     }
 
     public void UpdateOwned()
     {
         ironBarOwnedText.text = "Owned: " + InventoryManager.ironBars;
+        silverBarOwnedText.text = "Owned: " + InventoryManager.silverBars;
+        goldBarOwnedText.text = "Owned: " + InventoryManager.goldBars;
     }
 
     public void UpdateClickSlider()
