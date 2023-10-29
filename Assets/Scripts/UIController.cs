@@ -7,7 +7,8 @@ using TMPro;
 public class UIController : MonoBehaviour
 {
     [SerializeField] private InventoryManager inventory;
-    
+    [SerializeField] private ShopUIController shopUIController;
+
     [Header("Iron Bar")]
     [SerializeField] private GeneratorMono ironBar;
     [SerializeField] private TextMeshProUGUI ironBarText;
@@ -51,6 +52,7 @@ public class UIController : MonoBehaviour
         ironBarOwnedText.text = "Owned: " + InventoryManager.ironBars;
         silverBarOwnedText.text = "Owned: " + InventoryManager.silverBars;
         goldBarOwnedText.text = "Owned: " + InventoryManager.goldBars;
+        shopUIController.UpdateSliders();
     }
 
     public void UpdateClickSlider()

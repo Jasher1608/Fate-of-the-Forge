@@ -11,4 +11,6 @@ public class Generator : ScriptableObject
     public float baseProduction;
 
     public float buyPrice;
+
+    public float value;
 }

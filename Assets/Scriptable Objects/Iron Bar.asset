@@ -17,3 +17,4 @@ MonoBehaviour:
   priceGrowth: 1.07
   baseProduction: 1
   buyPrice: 3.99966
+  value: 1
