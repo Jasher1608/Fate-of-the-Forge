@@ -13,6 +13,10 @@ public class GeneratorMono : MonoBehaviour
 
     [SerializeField] private UIController UIController;
 
+    [SerializeField] private Button buyOne;
+    [SerializeField] private Button buyTen;
+    [SerializeField] private Button buyHundred;
+
     public GeneratorType generatorType;
 
     public int _quantity;
@@ -67,7 +71,23 @@ public class GeneratorMono : MonoBehaviour
 
     public void CalculateNext()
     {
-        buyPrice = generator.baseBuyPrice * Mathf.Pow(generator.priceGrowth, _quantity);
+        if (buyOne.gameObject.activeSelf)
+        {
+            buyPrice = generator.baseBuyPrice * Mathf.Pow(generator.priceGrowth, _quantity);
+        }
+        else if (buyTen.gameObject.activeSelf)
+        {
+            float numerator = Mathf.Pow(generator.priceGrowth, _quantity) * (Mathf.Pow(generator.priceGrowth, 10) - 1);
+            float denominator = generator.priceGrowth - 1;
+            buyPrice = generator.baseBuyPrice * (numerator / denominator);
+        }
+        else if (buyHundred.gameObject.activeSelf)
+        {
+            float numerator = Mathf.Pow(generator.priceGrowth, _quantity) * (Mathf.Pow(generator.priceGrowth, 100) - 1);
+            float denominator = generator.priceGrowth - 1;
+            buyPrice = generator.baseBuyPrice * (numerator / denominator);
+        }
+
         costText.text = "$" + Mathf.Round((float)(buyPrice * 100.0)) / 100.0;
     }
 

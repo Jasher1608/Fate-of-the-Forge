@@ -1603,6 +1603,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &321783814 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8115928450864394279, guid: 493e5715577ec5847bacc503ee3ddbab, type: 3}
+  m_PrefabInstance: {fileID: 733378220849926091}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &334115299 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 652625970344092590, guid: 9de5a6bba7afb30439f0252719d4c01d, type: 3}
@@ -1736,6 +1747,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 350475616}
   m_CullTransparentMesh: 1
+--- !u!114 &360460884 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2183579260888279798, guid: 493e5715577ec5847bacc503ee3ddbab, type: 3}
+  m_PrefabInstance: {fileID: 733378220849926091}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &383479387 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 3390181005206493098, guid: 78ef53be826da0e40bb9e654858dc5d9, type: 3}
@@ -3749,6 +3771,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4903487210756571241, guid: 78ef53be826da0e40bb9e654858dc5d9, type: 3}
+      propertyPath: m_text
+      value: Buy
+      objectReference: {fileID: 0}
     - target: {fileID: 5010011093211269041, guid: 78ef53be826da0e40bb9e654858dc5d9, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -3834,9 +3860,21 @@ PrefabInstance:
       value: IronBar
       objectReference: {fileID: 0}
     - target: {fileID: 8239238546118211491, guid: 78ef53be826da0e40bb9e654858dc5d9, type: 3}
+      propertyPath: buyOne
+      value: 
+      objectReference: {fileID: 360460884}
+    - target: {fileID: 8239238546118211491, guid: 78ef53be826da0e40bb9e654858dc5d9, type: 3}
+      propertyPath: buyTen
+      value: 
+      objectReference: {fileID: 1366242646}
+    - target: {fileID: 8239238546118211491, guid: 78ef53be826da0e40bb9e654858dc5d9, type: 3}
       propertyPath: costText
       value: 
       objectReference: {fileID: 383479387}
+    - target: {fileID: 8239238546118211491, guid: 78ef53be826da0e40bb9e654858dc5d9, type: 3}
+      propertyPath: buyHundred
+      value: 
+      objectReference: {fileID: 321783814}
     - target: {fileID: 8239238546118211491, guid: 78ef53be826da0e40bb9e654858dc5d9, type: 3}
       propertyPath: UIController
       value: 
@@ -4327,6 +4365,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1324174483}
   m_CullTransparentMesh: 1
+--- !u!114 &1366242646 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 992310934264240654, guid: 493e5715577ec5847bacc503ee3ddbab, type: 3}
+  m_PrefabInstance: {fileID: 733378220849926091}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1392956032
 GameObject:
   m_ObjectHideFlags: 0
@@ -6064,6 +6113,30 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 350475617}
     m_Modifications:
+    - target: {fileID: 992310934264240654, guid: 493e5715577ec5847bacc503ee3ddbab, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 1570581567}
+    - target: {fileID: 992310934264240654, guid: 493e5715577ec5847bacc503ee3ddbab, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[4].m_Target
+      value: 
+      objectReference: {fileID: 8239238544713979585}
+    - target: {fileID: 992310934264240654, guid: 493e5715577ec5847bacc503ee3ddbab, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[5].m_Target
+      value: 
+      objectReference: {fileID: 45613593098414644}
+    - target: {fileID: 2183579260888279798, guid: 493e5715577ec5847bacc503ee3ddbab, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 1570581567}
+    - target: {fileID: 2183579260888279798, guid: 493e5715577ec5847bacc503ee3ddbab, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[4].m_Target
+      value: 
+      objectReference: {fileID: 8239238544713979585}
+    - target: {fileID: 2183579260888279798, guid: 493e5715577ec5847bacc503ee3ddbab, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[5].m_Target
+      value: 
+      objectReference: {fileID: 45613593098414644}
     - target: {fileID: 3220394595669965932, guid: 493e5715577ec5847bacc503ee3ddbab, type: 3}
       propertyPath: m_Name
       value: PurchaseMultiplier
@@ -6148,6 +6221,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8115928450864394279, guid: 493e5715577ec5847bacc503ee3ddbab, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[3].m_Target
+      value: 
+      objectReference: {fileID: 1570581567}
+    - target: {fileID: 8115928450864394279, guid: 493e5715577ec5847bacc503ee3ddbab, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[4].m_Target
+      value: 
+      objectReference: {fileID: 8239238544713979585}
+    - target: {fileID: 8115928450864394279, guid: 493e5715577ec5847bacc503ee3ddbab, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[5].m_Target
+      value: 
+      objectReference: {fileID: 45613593098414644}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6162,9 +6247,21 @@ PrefabInstance:
     m_TransformParent: {fileID: 350475617}
     m_Modifications:
     - target: {fileID: 28307896999601914, guid: 425cc76ef4eea114aa42f2802ac6e699, type: 3}
+      propertyPath: buyOne
+      value: 
+      objectReference: {fileID: 360460884}
+    - target: {fileID: 28307896999601914, guid: 425cc76ef4eea114aa42f2802ac6e699, type: 3}
+      propertyPath: buyTen
+      value: 
+      objectReference: {fileID: 1366242646}
+    - target: {fileID: 28307896999601914, guid: 425cc76ef4eea114aa42f2802ac6e699, type: 3}
       propertyPath: costText
       value: 
       objectReference: {fileID: 1584365085}
+    - target: {fileID: 28307896999601914, guid: 425cc76ef4eea114aa42f2802ac6e699, type: 3}
+      propertyPath: buyHundred
+      value: 
+      objectReference: {fileID: 321783814}
     - target: {fileID: 28307896999601914, guid: 425cc76ef4eea114aa42f2802ac6e699, type: 3}
       propertyPath: UIController
       value: 
@@ -6257,6 +6354,10 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6491973002548117518, guid: 425cc76ef4eea114aa42f2802ac6e699, type: 3}
+      propertyPath: m_text
+      value: Buy
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6273,6 +6374,10 @@ PrefabInstance:
     - target: {fileID: 594954247184734342, guid: 9de5a6bba7afb30439f0252719d4c01d, type: 3}
       propertyPath: m_Name
       value: Gold Bar
+      objectReference: {fileID: 0}
+    - target: {fileID: 1212455695262442113, guid: 9de5a6bba7afb30439f0252719d4c01d, type: 3}
+      propertyPath: m_text
+      value: Buy
       objectReference: {fileID: 0}
     - target: {fileID: 2458325555216244076, guid: 9de5a6bba7afb30439f0252719d4c01d, type: 3}
       propertyPath: m_AnchorMax.y
@@ -6359,9 +6464,21 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8714733864122665398, guid: 9de5a6bba7afb30439f0252719d4c01d, type: 3}
+      propertyPath: buyOne
+      value: 
+      objectReference: {fileID: 360460884}
+    - target: {fileID: 8714733864122665398, guid: 9de5a6bba7afb30439f0252719d4c01d, type: 3}
+      propertyPath: buyTen
+      value: 
+      objectReference: {fileID: 1366242646}
+    - target: {fileID: 8714733864122665398, guid: 9de5a6bba7afb30439f0252719d4c01d, type: 3}
       propertyPath: costText
       value: 
       objectReference: {fileID: 334115299}
+    - target: {fileID: 8714733864122665398, guid: 9de5a6bba7afb30439f0252719d4c01d, type: 3}
+      propertyPath: buyHundred
+      value: 
+      objectReference: {fileID: 321783814}
     - target: {fileID: 8714733864122665398, guid: 9de5a6bba7afb30439f0252719d4c01d, type: 3}
       propertyPath: UIController
       value: 
