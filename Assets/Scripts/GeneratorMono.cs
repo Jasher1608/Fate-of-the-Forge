@@ -17,6 +17,8 @@ public class GeneratorMono : MonoBehaviour
     [SerializeField] private Button buyTen;
     [SerializeField] private Button buyHundred;
 
+    private int purchaseAmount = 1;
+
     public GeneratorType generatorType;
 
     public int _quantity;
@@ -53,7 +55,7 @@ public class GeneratorMono : MonoBehaviour
     {
         if (CanUpgrade())
         {
-            _quantity += 1;
+            _quantity += purchaseAmount;
             UIController.UpdatePurchased();
             production = Mathf.FloorToInt((generator.baseProduction * _quantity) * productionMultiplier);
             InventoryManager.money -= buyPrice;
@@ -74,21 +76,24 @@ public class GeneratorMono : MonoBehaviour
         if (buyOne.gameObject.activeSelf)
         {
             buyPrice = generator.baseBuyPrice * Mathf.Pow(generator.priceGrowth, _quantity);
+            purchaseAmount = 1;
         }
         else if (buyTen.gameObject.activeSelf)
         {
             float numerator = Mathf.Pow(generator.priceGrowth, _quantity) * (Mathf.Pow(generator.priceGrowth, 10) - 1);
             float denominator = generator.priceGrowth - 1;
             buyPrice = generator.baseBuyPrice * (numerator / denominator);
+            purchaseAmount = 10;
         }
         else if (buyHundred.gameObject.activeSelf)
         {
             float numerator = Mathf.Pow(generator.priceGrowth, _quantity) * (Mathf.Pow(generator.priceGrowth, 100) - 1);
             float denominator = generator.priceGrowth - 1;
             buyPrice = generator.baseBuyPrice * (numerator / denominator);
+            purchaseAmount = 100;
         }
 
-        costText.text = "$" + Mathf.Round((float)(buyPrice * 100.0)) / 100.0;
+        costText.text = "$" + (Mathf.Round((float)(buyPrice * 100.0)) / 100.0).ToString("#,0.00");
     }
 
     private void CalculateNextMilestone()

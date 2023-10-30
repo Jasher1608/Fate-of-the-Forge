@@ -25,17 +25,17 @@ public class ShopUIController : MonoBehaviour
 
     private void Update()
     {
-        ironBarSellAmountText.text = ironBarSlider.value.ToString();
-        silverBarSellAmountText.text = silverBarSlider.value.ToString();
-        goldBarSellAmountText.text = goldBarSlider.value.ToString();
+        ironBarSellAmountText.text = ironBarSlider.value.ToString("#,0");
+        silverBarSellAmountText.text = silverBarSlider.value.ToString("#,0");
+        goldBarSellAmountText.text = goldBarSlider.value.ToString("#,0");
     }
 
     public void UpdateSliders()
     {
         // Text
-        ironBarMaxText.text = InventoryManager.ironBars.ToString();
-        silverBarMaxText.text = InventoryManager.silverBars.ToString();
-        goldBarMaxText.text = InventoryManager.goldBars.ToString();
+        ironBarMaxText.text = InventoryManager.ironBars.ToString("#,0");
+        silverBarMaxText.text = InventoryManager.silverBars.ToString("#,0");
+        goldBarMaxText.text = InventoryManager.goldBars.ToString("#,0");
         // Slider max values
         ironBarSlider.maxValue = InventoryManager.ironBars;
         silverBarSlider.maxValue = InventoryManager.silverBars;

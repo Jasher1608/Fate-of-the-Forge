@@ -37,21 +37,21 @@ public class UIController : MonoBehaviour
 
     public void UpdateMoney()
     {
-        moneyText.text = "$" + Mathf.Round((float)(InventoryManager.money * 100.0)) / 100.0; // Rounds to 2dp
+        moneyText.text = "$" + (Mathf.Round((float)(InventoryManager.money * 100.0)) / 100.0).ToString("#,0.00"); // Rounds to 2dp
     }
 
     public void UpdatePurchased()
     {
-        ironBarText.text = "Purchased: " + ironBar._quantity;
-        silverBarText.text = "Purchased: " + silverBar._quantity;
-        goldBarText.text = "Purchased: " + goldBar._quantity;
+        ironBarText.text = "Purchased: " + ironBar._quantity.ToString("#,0");
+        silverBarText.text = "Purchased: " + silverBar._quantity.ToString("#,0");
+        goldBarText.text = "Purchased: " + goldBar._quantity.ToString("#,0");
     }
 
     public void UpdateOwned()
     {
-        ironBarOwnedText.text = "Owned: " + InventoryManager.ironBars;
-        silverBarOwnedText.text = "Owned: " + InventoryManager.silverBars;
-        goldBarOwnedText.text = "Owned: " + InventoryManager.goldBars;
+        ironBarOwnedText.text = "Owned: " + InventoryManager.ironBars.ToString("#,0");
+        silverBarOwnedText.text = "Owned: " + InventoryManager.silverBars.ToString("#,0");
+        goldBarOwnedText.text = "Owned: " + InventoryManager.goldBars.ToString("#,0");
         shopUIController.UpdateSliders();
     }
 
