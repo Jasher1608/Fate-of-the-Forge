@@ -2,11 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class GeneratorMono : MonoBehaviour
 {
     [SerializeField] Generator generator;
     [SerializeField] private Slider milestoneProgress;
+
+    [SerializeField] private TextMeshProUGUI costText;
 
     [SerializeField] private UIController UIController;
 
@@ -65,6 +68,7 @@ public class GeneratorMono : MonoBehaviour
     public void CalculateNext()
     {
         buyPrice = generator.baseBuyPrice * Mathf.Pow(generator.priceGrowth, _quantity);
+        costText.text = "$" + Mathf.Round((float)(buyPrice * 100.0)) / 100.0;
     }
 
     private void CalculateNextMilestone()

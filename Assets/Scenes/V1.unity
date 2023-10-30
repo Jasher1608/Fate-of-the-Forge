@@ -1603,6 +1603,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &334115299 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 652625970344092590, guid: 9de5a6bba7afb30439f0252719d4c01d, type: 3}
+  m_PrefabInstance: {fileID: 2305992767145677697}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &350475616
 GameObject:
   m_ObjectHideFlags: 0
@@ -1725,6 +1736,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 350475616}
   m_CullTransparentMesh: 1
+--- !u!114 &383479387 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3390181005206493098, guid: 78ef53be826da0e40bb9e654858dc5d9, type: 3}
+  m_PrefabInstance: {fileID: 1193188024}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &397953797
 GameObject:
   m_ObjectHideFlags: 0
@@ -3812,6 +3834,10 @@ PrefabInstance:
       value: IronBar
       objectReference: {fileID: 0}
     - target: {fileID: 8239238546118211491, guid: 78ef53be826da0e40bb9e654858dc5d9, type: 3}
+      propertyPath: costText
+      value: 
+      objectReference: {fileID: 383479387}
+    - target: {fileID: 8239238546118211491, guid: 78ef53be826da0e40bb9e654858dc5d9, type: 3}
       propertyPath: UIController
       value: 
       objectReference: {fileID: 631492109}
@@ -4965,6 +4991,17 @@ MonoBehaviour:
   m_Spacing: {x: 23.4, y: 19.68}
   m_Constraint: 0
   m_ConstraintCount: 2
+--- !u!114 &1584365085 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4548310974741838028, guid: 425cc76ef4eea114aa42f2802ac6e699, type: 3}
+  m_PrefabInstance: {fileID: 1303370523375437173}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1660531370
 GameObject:
   m_ObjectHideFlags: 0
@@ -6125,6 +6162,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 350475617}
     m_Modifications:
     - target: {fileID: 28307896999601914, guid: 425cc76ef4eea114aa42f2802ac6e699, type: 3}
+      propertyPath: costText
+      value: 
+      objectReference: {fileID: 1584365085}
+    - target: {fileID: 28307896999601914, guid: 425cc76ef4eea114aa42f2802ac6e699, type: 3}
       propertyPath: UIController
       value: 
       objectReference: {fileID: 631492109}
@@ -6317,6 +6358,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8714733864122665398, guid: 9de5a6bba7afb30439f0252719d4c01d, type: 3}
+      propertyPath: costText
+      value: 
+      objectReference: {fileID: 334115299}
     - target: {fileID: 8714733864122665398, guid: 9de5a6bba7afb30439f0252719d4c01d, type: 3}
       propertyPath: UIController
       value: 
