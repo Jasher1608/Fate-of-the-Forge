@@ -61,13 +61,13 @@ public class GeneratorMono : MonoBehaviour
             InventoryManager.money -= buyPrice;
             UIController.UpdateMoney();
             CalculateNext();
-            milestoneProgress.value = _quantity;
             if (_quantity >= nextMilestone && nextMilestone != 400)
             {
                 CalculateNextMilestone();
                 milestoneProgress.maxValue = nextMilestone;
                 milestoneProgress.minValue = lastMilestone;
             }
+            milestoneProgress.value = _quantity;
         }
     }
 
