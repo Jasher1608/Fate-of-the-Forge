@@ -10,6 +10,7 @@ public class InventoryManager : MonoBehaviour
     
     public static double money = 10000; // Using double to allow player to have more money
     public static int ironBars = 0;
+    public static int copperBars = 0;
     public static int silverBars = 0;
     public static int goldBars = 0;
 

@@ -26,6 +26,11 @@ public class ShopController : MonoBehaviour
                 InventoryManager.money += (slider.value * generator.value) * barPriceMultiplier;
                 slider.value = 0;
                 break;
+            case SellingType.Copper:
+                InventoryManager.copperBars -= (int)slider.value;
+                InventoryManager.money += (slider.value * generator.value) * barPriceMultiplier;
+                slider.value = 0;
+                break;
             case SellingType.Silver:
                 InventoryManager.silverBars -= (int)slider.value;
                 InventoryManager.money += (slider.value * generator.value) * barPriceMultiplier;
@@ -46,6 +51,7 @@ public class ShopController : MonoBehaviour
 public enum SellingType
 {
     Iron,
+    Copper,
     Silver,
     Gold
 }

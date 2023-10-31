@@ -14,6 +14,11 @@ public class UIController : MonoBehaviour
     [SerializeField] private TextMeshProUGUI ironBarText;
     [SerializeField] private TextMeshProUGUI ironBarOwnedText;
 
+    [Header("Copper Bar")]
+    [SerializeField] private GeneratorMono copperBar;
+    [SerializeField] private TextMeshProUGUI copperBarText;
+    [SerializeField] private TextMeshProUGUI copperBarOwnedText;
+
     [Header("Silver Bar")]
     [SerializeField] private GeneratorMono silverBar;
     [SerializeField] private TextMeshProUGUI silverBarText;
@@ -43,6 +48,7 @@ public class UIController : MonoBehaviour
     public void UpdatePurchased()
     {
         ironBarText.text = "Purchased: " + ironBar._quantity.ToString("#,0");
+        copperBarText.text = "Purchased: " + copperBar._quantity.ToString("#,0");
         silverBarText.text = "Purchased: " + silverBar._quantity.ToString("#,0");
         goldBarText.text = "Purchased: " + goldBar._quantity.ToString("#,0");
     }
@@ -50,6 +56,7 @@ public class UIController : MonoBehaviour
     public void UpdateOwned()
     {
         ironBarOwnedText.text = "Owned: " + InventoryManager.ironBars.ToString("#,0");
+        copperBarOwnedText.text = "Owned: " + InventoryManager.copperBars.ToString("#,0");
         silverBarOwnedText.text = "Owned: " + InventoryManager.silverBars.ToString("#,0");
         goldBarOwnedText.text = "Owned: " + InventoryManager.goldBars.ToString("#,0");
         shopUIController.UpdateSeller();

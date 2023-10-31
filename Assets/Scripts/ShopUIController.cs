@@ -15,6 +15,13 @@ public class ShopUIController : MonoBehaviour
     [SerializeField] private TextMeshProUGUI ironBarMaxText;
     [SerializeField] private TextMeshProUGUI ironBarSellValueText;
 
+    [Header("Copper Bar")]
+    [SerializeField] private Generator copperBar;
+    [SerializeField] private Slider copperBarSlider;
+    [SerializeField] private TextMeshProUGUI copperBarSellAmountText;
+    [SerializeField] private TextMeshProUGUI copperBarMaxText;
+    [SerializeField] private TextMeshProUGUI copperBarSellValueText;
+
     [Header("Silver Bar")]
     [SerializeField] private Generator silverBar;
     [SerializeField] private Slider silverBarSlider;
@@ -32,10 +39,12 @@ public class ShopUIController : MonoBehaviour
     private void Update()
     {
         ironBarSellAmountText.text = ironBarSlider.value.ToString("#,0");
+        copperBarSellAmountText.text = copperBarSlider.value.ToString("#,0");
         silverBarSellAmountText.text = silverBarSlider.value.ToString("#,0");
         goldBarSellAmountText.text = goldBarSlider.value.ToString("#,0");
 
         ironBarSellValueText.text = "$" + (ironBarSlider.value * ironBar.value * ShopController.barPriceMultiplier).ToString("#,0.00");
+        copperBarSellValueText.text = "$" + (copperBarSlider.value * copperBar.value * ShopController.barPriceMultiplier).ToString("#,0.00");
         silverBarSellValueText.text = "$" + (silverBarSlider.value * silverBar.value * ShopController.barPriceMultiplier).ToString("#,0.00");
         goldBarSellValueText.text = "$" + (goldBarSlider.value * goldBar.value * ShopController.barPriceMultiplier).ToString("#,0.00");
     }
@@ -44,10 +53,12 @@ public class ShopUIController : MonoBehaviour
     {
         // Text
         ironBarMaxText.text = InventoryManager.ironBars.ToString("#,0");
+        copperBarMaxText.text = InventoryManager.copperBars.ToString("#,0");
         silverBarMaxText.text = InventoryManager.silverBars.ToString("#,0");
         goldBarMaxText.text = InventoryManager.goldBars.ToString("#,0");
         // Slider max values
         ironBarSlider.maxValue = InventoryManager.ironBars;
+        copperBarSlider.maxValue = InventoryManager.copperBars;
         silverBarSlider.maxValue = InventoryManager.silverBars;
         goldBarSlider.maxValue = InventoryManager.goldBars;
     }

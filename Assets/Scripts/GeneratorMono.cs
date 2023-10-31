@@ -142,6 +142,9 @@ public class GeneratorMono : MonoBehaviour
             case GeneratorType.Iron:
                 InventoryManager.ironBars += production;
                 break;
+            case GeneratorType.Copper:
+                InventoryManager.copperBars += production;
+                break;
             case GeneratorType.Silver:
                 InventoryManager.silverBars += production;
                 break;
@@ -157,6 +160,7 @@ public class GeneratorMono : MonoBehaviour
 public enum GeneratorType
 {
     Iron,
+    Copper,
     Silver,
     Gold
 }
