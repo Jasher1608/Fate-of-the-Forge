@@ -38,6 +38,8 @@ public class AchievementSystem : MonoBehaviour
                     break;
             }
         }
+
+        ProgressAchivement("Forging a new beginning", 1);
     }
 
     public void ProgressAchivement(string title, float amount)

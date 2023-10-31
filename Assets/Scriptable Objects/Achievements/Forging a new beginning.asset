@@ -18,5 +18,5 @@ MonoBehaviour:
   lockedSprite: {fileID: 309987582, guid: 831dc96ceb551da48a5fffeea80e6de3, type: 3}
   unlockedSprite: {fileID: -1074794365, guid: 831dc96ceb551da48a5fffeea80e6de3, type: 3}
   requiredProgress: 25
-  currentProgress: 30
-  isUnlocked: 1
+  currentProgress: 1
+  isUnlocked: 0
