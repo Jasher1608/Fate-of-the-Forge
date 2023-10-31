@@ -2638,6 +2638,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ironBarMono: {fileID: 1570581567}
+  copperBarMono: {fileID: 3087750933204711797}
   silverBarMono: {fileID: 8239238544713979585}
   goldBarMono: {fileID: 45613593098414644}
 --- !u!1 &661430640

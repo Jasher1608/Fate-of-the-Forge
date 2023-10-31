@@ -6,6 +6,7 @@ using UnityEngine;
 public class AchievementManager : MonoBehaviour
 {
     [SerializeField] private GeneratorMono ironBarMono;
+    [SerializeField] private GeneratorMono copperBarMono;
     [SerializeField] private GeneratorMono silverBarMono;
     [SerializeField] private GeneratorMono goldBarMono;
     
@@ -46,7 +47,7 @@ public class AchievementManager : MonoBehaviour
         }
 
         achievements = new List<Achievement>();
-        achievements.Add(new Achievement("Forging a new beginning", "Acquired 25 Iron Bar generators", (object o) => ironBarMono._quantity >= 25));
+        AddAchievements();
     }
 
     private void Update()
@@ -65,6 +66,11 @@ public class AchievementManager : MonoBehaviour
         {
             achievement.UpdateCompletion();
         }
+    }
+
+    public void AddAchievements()
+    {
+        achievements.Add(new Achievement("Forging a new beginning", "Acquired 25 Iron Bar generators", (object o) => ironBarMono._quantity >= 25));
     }
 }
 
