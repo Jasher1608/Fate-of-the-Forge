@@ -39,6 +39,29 @@ public class GeneratorMono : MonoBehaviour
         production = Mathf.FloorToInt((generator.baseProduction * _quantity) * productionMultiplier);
         milestoneProgress.maxValue = nextMilestone;
         milestoneProgress.value = _quantity;
+
+        // Achievements
+        achievementSystem.SetProgress("Forging a new beginning", 1);
+    }
+
+    private void Update()
+    {
+        // Achievements
+        switch (generatorType)
+        {
+            case GeneratorType.Iron:
+                achievementSystem.SetProgress("Forging a new beginning", _quantity);
+                break;
+            case GeneratorType.Copper:
+
+                break;
+            case GeneratorType.Silver:
+
+                break;
+            case GeneratorType.Gold:
+
+                break;
+        }
     }
 
     public bool CanUpgrade()
@@ -70,7 +93,6 @@ public class GeneratorMono : MonoBehaviour
                 milestoneProgress.minValue = lastMilestone;
             }
             milestoneProgress.value = _quantity;
-            achievementSystem.ProgressAchivement("Forging a new beginning", purchaseAmount);
         }
     }
 

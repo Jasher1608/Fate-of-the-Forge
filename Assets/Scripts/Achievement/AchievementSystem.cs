@@ -38,17 +38,25 @@ public class AchievementSystem : MonoBehaviour
                     break;
             }
         }
-
-        ProgressAchivement("Forging a new beginning", 1);
     }
 
-    public void ProgressAchivement(string title, float amount)
+    public void ProgressAchievement(string title, float amount)
     {
         Achievement achievement = achievementManager.achievements.Find(a => a.title == title);
 
         if (achievement != null)
         {
             achievement.IncrementProgress(amount);
+        }
+    }
+
+    public void SetProgress(string title, float amount)
+    {
+        Achievement achievement = achievementManager.achievements.Find(a => a.title == title);
+
+        if (achievement != null)
+        {
+            achievement.SetProgress(amount);
         }
     }
 }

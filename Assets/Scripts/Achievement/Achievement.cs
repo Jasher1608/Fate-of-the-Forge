@@ -29,6 +29,19 @@ public class Achievement : ScriptableObject
         }
     }
 
+    public void SetProgress(float amount)
+    {
+        if (!isUnlocked)
+        {
+            currentProgress = amount;
+
+            if (currentProgress >= requiredProgress)
+            {
+                Unlock();
+            }
+        }
+    }
+
     private void Unlock()
     {
         isUnlocked = true;
