@@ -6,6 +6,8 @@ using TMPro;
 
 public class GeneratorMono : MonoBehaviour
 {
+    [SerializeField] private AchievementSystem achievementSystem;
+    
     [SerializeField] Generator generator;
     [SerializeField] private Slider milestoneProgress;
 
@@ -68,6 +70,7 @@ public class GeneratorMono : MonoBehaviour
                 milestoneProgress.minValue = lastMilestone;
             }
             milestoneProgress.value = _quantity;
+            achievementSystem.ProgressAchivement("Forging a new beginning", purchaseAmount);
         }
     }
 
