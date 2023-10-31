@@ -52,7 +52,7 @@ public class UIController : MonoBehaviour
         ironBarOwnedText.text = "Owned: " + InventoryManager.ironBars.ToString("#,0");
         silverBarOwnedText.text = "Owned: " + InventoryManager.silverBars.ToString("#,0");
         goldBarOwnedText.text = "Owned: " + InventoryManager.goldBars.ToString("#,0");
-        shopUIController.UpdateSliders();
+        shopUIController.UpdateSeller();
     }
 
     public void UpdateClickSlider()

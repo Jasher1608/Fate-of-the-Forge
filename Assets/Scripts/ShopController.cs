@@ -11,7 +11,7 @@ public class ShopController : MonoBehaviour
     
     [SerializeField] Generator generator;
 
-    public float barPriceMultiplier = 1f;
+    public static float barPriceMultiplier = 1f;
 
     public SellingType sellingType;
 
@@ -37,7 +37,7 @@ public class ShopController : MonoBehaviour
                 slider.value = 0;
                 break;
         }
-        shopUIController.UpdateSliders();
+        shopUIController.UpdateSeller();
         UIController.UpdateOwned();
         UIController.UpdateMoney();
     }
