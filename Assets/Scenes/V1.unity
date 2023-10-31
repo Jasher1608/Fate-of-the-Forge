@@ -11205,25 +11205,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gold Bar
       objectReference: {fileID: 0}
-    - target: {fileID: 1115317026860574206, guid: 9de5a6bba7afb30439f0252719d4c01d, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2458325555216244076, guid: 9de5a6bba7afb30439f0252719d4c01d, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7778225513613322315, guid: 9de5a6bba7afb30439f0252719d4c01d, type: 3}
-      propertyPath: m_Color.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7778225513613322315, guid: 9de5a6bba7afb30439f0252719d4c01d, type: 3}
-      propertyPath: m_Color.g
-      value: 0.70980394
-      objectReference: {fileID: 0}
-    - target: {fileID: 7778225513613322315, guid: 9de5a6bba7afb30439f0252719d4c01d, type: 3}
-      propertyPath: m_Color.r
-      value: 0.9960785
       objectReference: {fileID: 0}
     - target: {fileID: 8460922003537880076, guid: 9de5a6bba7afb30439f0252719d4c01d, type: 3}
       propertyPath: m_Pivot.x
