@@ -1,9 +1,16 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class AchievementSystem : MonoBehaviour
 {
     public AchievementManager achievementManager;
+
+    public List<Achievement> unlocked = new List<Achievement>();
+
+    [SerializeField] private GameObject achievementUnlockedPrefabParent;
+    [SerializeField] private GameObject achievementUnlockedPrefab;
+    private AchievementUnlocked achievementUnlocked;
 
     [SerializeField] private GameObject forgeTrophies;
     [SerializeField] private GameObject craftingTrophies;
@@ -36,6 +43,20 @@ public class AchievementSystem : MonoBehaviour
                     trophy.GetComponent<Image>().sprite = achievement.lockedSprite;
                     trophy.GetComponent<AchievementHolder>().achievement = achievement;
                     break;
+            }
+        }
+    }
+
+    private void Update()
+    {
+        foreach (Achievement achievement in achievementManager.achievements)
+        {
+            if (achievement.isUnlocked && !unlocked.Contains(achievement))
+            {
+                GameObject temp = Instantiate(achievementUnlockedPrefab, achievementUnlockedPrefabParent.transform);
+                achievementUnlocked = temp.GetComponent<AchievementUnlocked>();
+                achievementUnlocked.achievement = achievement;
+                unlocked.Add(achievement);
             }
         }
     }
