@@ -61,7 +61,11 @@ public class GeneratorMono : MonoBehaviour
                 achievementSystem.SetProgress("Metallurgic Mastermind", _quantity);
                 break;
             case GeneratorType.Copper:
-
+                achievementSystem.SetProgress("Bronze Beginnings", _quantity);
+                achievementSystem.SetProgress("Cuprum Collector", _quantity);
+                achievementSystem.SetProgress("Copper Centurion", _quantity);
+                achievementSystem.SetProgress("Copper Cascade", _quantity);
+                achievementSystem.SetProgress("Copper Crescendo", _quantity);
                 break;
             case GeneratorType.Silver:
 
