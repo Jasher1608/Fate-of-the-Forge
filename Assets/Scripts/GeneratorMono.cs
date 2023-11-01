@@ -42,6 +42,10 @@ public class GeneratorMono : MonoBehaviour
 
         // Achievements
         achievementSystem.SetProgress("Forging a new beginning", 1);
+        achievementSystem.SetProgress("Ironcraft Initiate", 1);
+        achievementSystem.SetProgress("Hundredfold Hammering", 1);
+        achievementSystem.SetProgress("Double down on iron", 1);
+        achievementSystem.SetProgress("Metallurgic Mastermind", 1);
     }
 
     private void Update()
@@ -51,6 +55,10 @@ public class GeneratorMono : MonoBehaviour
         {
             case GeneratorType.Iron:
                 achievementSystem.SetProgress("Forging a new beginning", _quantity);
+                achievementSystem.SetProgress("Ironcraft Initiate", _quantity);
+                achievementSystem.SetProgress("Hundredfold Hammering", _quantity);
+                achievementSystem.SetProgress("Double down on iron", _quantity);
+                achievementSystem.SetProgress("Metallurgic Mastermind", _quantity);
                 break;
             case GeneratorType.Copper:
 

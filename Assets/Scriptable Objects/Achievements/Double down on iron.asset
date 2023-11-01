@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 447d18e3c5f5cf84b944ed05eeb68740, type: 3}
-  m_Name: Forging a new beginning
+  m_Name: Double down on iron
   m_EditorClassIdentifier: 
-  title: Forging a new beginning
-  description: Acquire 25 Iron Bar generators
+  title: Double down on iron
+  description: Acquire 200 Iron Bar generators
   achievementType: 0
   lockedSprite: {fileID: 309987582, guid: 831dc96ceb551da48a5fffeea80e6de3, type: 3}
   unlockedSprite: {fileID: -1074794365, guid: 831dc96ceb551da48a5fffeea80e6de3, type: 3}
-  requiredProgress: 25
-  currentProgress: 31
-  isUnlocked: 1
+  requiredProgress: 200
+  currentProgress: 71
+  isUnlocked: 0
