@@ -75,7 +75,11 @@ public class GeneratorMono : MonoBehaviour
                 achievementSystem.SetProgress("Argentum Anarchy", _quantity);
                 break;
             case GeneratorType.Gold:
-
+                achievementSystem.SetProgress("Gold Rush", _quantity);
+                achievementSystem.SetProgress("Gilded Grandeur", _quantity);
+                achievementSystem.SetProgress("Gold Gregg", _quantity);
+                achievementSystem.SetProgress("Aurum Abundance", _quantity);
+                achievementSystem.SetProgress("The Midas Touch", _quantity);
                 break;
         }
     }
