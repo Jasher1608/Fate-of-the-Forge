@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class InventoryManager : MonoBehaviour
 {
+    [SerializeField] private AchievementSystem achievementSystem;
+
     [SerializeField] private List<GeneratorMono> generators = new List<GeneratorMono>();
 
     [SerializeField] private UIController UIController;
@@ -26,6 +28,10 @@ public class InventoryManager : MonoBehaviour
             UIController.UpdateClickSlider();
             Produce(); // Janky lmao
         }
+
+        achievementSystem.SetProgress("Enterprising Entrepreneur", (float) money);
+        achievementSystem.SetProgress("Metal Magnate", (float) money);
+        achievementSystem.SetProgress("Mansa Musa", (float) money);
     }
 
     public void Produce()

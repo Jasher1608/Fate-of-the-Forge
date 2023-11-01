@@ -3815,6 +3815,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20f43ffe862649346825436f1dbe3975, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  achievementSystem: {fileID: 631492113}
   generators:
   - {fileID: 1570581567}
   - {fileID: 3087750933204711797}

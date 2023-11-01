@@ -48,6 +48,10 @@ public class AchievementSystem : MonoBehaviour
         {
             achievement.IncrementProgress(amount);
         }
+        else
+        {
+            Debug.Log("Achievement " + title + " not found");
+        }
     }
 
     public void SetProgress(string title, float amount)
@@ -57,6 +61,10 @@ public class AchievementSystem : MonoBehaviour
         if (achievement != null)
         {
             achievement.SetProgress(amount);
+        }
+        else
+        {
+            Debug.Log("Achievement " + title + " not found");
         }
     }
 }
