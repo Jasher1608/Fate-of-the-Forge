@@ -68,7 +68,11 @@ public class GeneratorMono : MonoBehaviour
                 achievementSystem.SetProgress("Copper Crescendo", _quantity);
                 break;
             case GeneratorType.Silver:
-
+                achievementSystem.SetProgress("Silvery step forward", _quantity);
+                achievementSystem.SetProgress("Fifty Shades of Silver", _quantity);
+                achievementSystem.SetProgress("Silverado", _quantity);
+                achievementSystem.SetProgress("Silver Surplus", _quantity);
+                achievementSystem.SetProgress("Argentum Anarchy", _quantity);
                 break;
             case GeneratorType.Gold:
 
