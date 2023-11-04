@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Copper Bar
   m_EditorClassIdentifier: 
   quantity: 0
-  baseBuyPrice: 60
-  priceGrowth: 1.15
+  baseBuyPrice: 75
+  priceGrowth: 1.13
   baseProduction: 1
   buyPrice: 0
-  value: 60
+  value: 20

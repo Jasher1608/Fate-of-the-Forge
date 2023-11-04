@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Silver Bar
   m_EditorClassIdentifier: 
   quantity: 0
-  baseBuyPrice: 720
-  priceGrowth: 1.14
+  baseBuyPrice: 900
+  priceGrowth: 1.12
   baseProduction: 1
   buyPrice: 0
-  value: 540
+  value: 200

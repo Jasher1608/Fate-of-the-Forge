@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Gold Bar
   m_EditorClassIdentifier: 
   quantity: 0
-  baseBuyPrice: 8640
-  priceGrowth: 1.13
+  baseBuyPrice: 9500
+  priceGrowth: 1.11
   baseProduction: 1
   buyPrice: 0
-  value: 4320
+  value: 2000
