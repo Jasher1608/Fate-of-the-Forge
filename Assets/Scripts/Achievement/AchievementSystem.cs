@@ -6,6 +6,8 @@ public class AchievementSystem : MonoBehaviour
 {
     public AchievementManager achievementManager;
 
+    public GameObject tooltipPrefab;
+
     public List<Achievement> unlocked = new List<Achievement>();
 
     [SerializeField] private GameObject achievementUnlockedPrefabParent;
