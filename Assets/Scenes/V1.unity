@@ -3015,6 +3015,11 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+--- !u!1 &415677796 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7321406481163511304, guid: 7e63f2b1aa64f08488a4dc700127dbdb, type: 3}
+  m_PrefabInstance: {fileID: 5244873579778682453}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &429884352 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 8175920482221671585, guid: 7e63f2b1aa64f08488a4dc700127dbdb, type: 3}
@@ -4224,7 +4229,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   achievementManager: {fileID: 11400000, guid: 74a95f2e73940e0409fd7a35d5bd01d9, type: 2}
   unlocked: []
-  achievementUnlockedPrefabParent: {fileID: 1037897314}
+  achievementUnlockedPrefabParent: {fileID: 415677796}
   achievementUnlockedPrefab: {fileID: 3402118909297566972, guid: d8b0a83b2a2e6da499d16413e0d4bd9c, type: 3}
   forgeTrophies: {fileID: 1601065555}
   craftingTrophies: {fileID: 1852636137}
