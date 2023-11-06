@@ -3256,6 +3256,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &531221282 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1780975710869618804, guid: 9de5a6bba7afb30439f0252719d4c01d, type: 3}
+  m_PrefabInstance: {fileID: 2305992767145677697}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &540106283
 GameObject:
   m_ObjectHideFlags: 0
@@ -5171,6 +5176,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 908813339}
   m_CullTransparentMesh: 1
+--- !u!1 &909619737 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3314726494009450487, guid: 425cc76ef4eea114aa42f2802ac6e699, type: 3}
+  m_PrefabInstance: {fileID: 1303370523375437173}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &914183927
 GameObject:
   m_ObjectHideFlags: 0
@@ -6444,6 +6454,10 @@ PrefabInstance:
       propertyPath: buyHundred
       value: 
       objectReference: {fileID: 321783814}
+    - target: {fileID: 8239238546118211491, guid: 78ef53be826da0e40bb9e654858dc5d9, type: 3}
+      propertyPath: lockSprite
+      value: 
+      objectReference: {fileID: 2099845861}
     - target: {fileID: 8239238546118211491, guid: 78ef53be826da0e40bb9e654858dc5d9, type: 3}
       propertyPath: UIController
       value: 
@@ -8934,6 +8948,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1601065555}
   m_CullTransparentMesh: 1
+--- !u!1 &1625368413 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 899861560697938554, guid: e91187b313d7e45499f49056d5159a96, type: 3}
+  m_PrefabInstance: {fileID: 3005746506756259459}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1626332984
 GameObject:
   m_ObjectHideFlags: 0
@@ -10685,6 +10704,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2081118282}
   m_CullTransparentMesh: 1
+--- !u!1 &2099845861 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9024227329582674673, guid: 78ef53be826da0e40bb9e654858dc5d9, type: 3}
+  m_PrefabInstance: {fileID: 1193188024}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2109447316
 GameObject:
   m_ObjectHideFlags: 0
@@ -11233,6 +11257,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 321783814}
     - target: {fileID: 28307896999601914, guid: 425cc76ef4eea114aa42f2802ac6e699, type: 3}
+      propertyPath: lockSprite
+      value: 
+      objectReference: {fileID: 909619737}
+    - target: {fileID: 28307896999601914, guid: 425cc76ef4eea114aa42f2802ac6e699, type: 3}
       propertyPath: UIController
       value: 
       objectReference: {fileID: 631492109}
@@ -11247,6 +11275,10 @@ PrefabInstance:
     - target: {fileID: 1304707605723071627, guid: 425cc76ef4eea114aa42f2802ac6e699, type: 3}
       propertyPath: m_Name
       value: Silver Bar
+      objectReference: {fileID: 0}
+    - target: {fileID: 1304707605723071627, guid: 425cc76ef4eea114aa42f2802ac6e699, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4065604694153817656, guid: 425cc76ef4eea114aa42f2802ac6e699, type: 3}
       propertyPath: m_Pivot.x
@@ -11334,7 +11366,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6675683562030148794, guid: 425cc76ef4eea114aa42f2802ac6e699, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11363,9 +11395,13 @@ PrefabInstance:
       propertyPath: m_Name
       value: Gold Bar
       objectReference: {fileID: 0}
+    - target: {fileID: 594954247184734342, guid: 9de5a6bba7afb30439f0252719d4c01d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1115317026860574206, guid: 9de5a6bba7afb30439f0252719d4c01d, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2458325555216244076, guid: 9de5a6bba7afb30439f0252719d4c01d, type: 3}
       propertyPath: m_AnchorMax.y
@@ -11463,6 +11499,10 @@ PrefabInstance:
       propertyPath: buyHundred
       value: 
       objectReference: {fileID: 321783814}
+    - target: {fileID: 8714733864122665398, guid: 9de5a6bba7afb30439f0252719d4c01d, type: 3}
+      propertyPath: lockSprite
+      value: 
+      objectReference: {fileID: 531221282}
     - target: {fileID: 8714733864122665398, guid: 9de5a6bba7afb30439f0252719d4c01d, type: 3}
       propertyPath: UIController
       value: 
@@ -11618,7 +11658,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4760541869147228707, guid: e91187b313d7e45499f49056d5159a96, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5478971182121399525, guid: e91187b313d7e45499f49056d5159a96, type: 3}
       propertyPath: buyOne
@@ -11632,6 +11672,10 @@ PrefabInstance:
       propertyPath: buyHundred
       value: 
       objectReference: {fileID: 321783814}
+    - target: {fileID: 5478971182121399525, guid: e91187b313d7e45499f49056d5159a96, type: 3}
+      propertyPath: lockSprite
+      value: 
+      objectReference: {fileID: 1625368413}
     - target: {fileID: 5478971182121399525, guid: e91187b313d7e45499f49056d5159a96, type: 3}
       propertyPath: UIController
       value: 

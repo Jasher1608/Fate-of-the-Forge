@@ -10,7 +10,7 @@ public class InventoryManager : MonoBehaviour
 
     [SerializeField] private UIController UIController;
     
-    public static double money = 0; // Using double to allow player to have more money
+    public static double money = 100000; // Using double to allow player to have more money
     public static int ironBars = 0;
     public static int copperBars = 0;
     public static int silverBars = 0;

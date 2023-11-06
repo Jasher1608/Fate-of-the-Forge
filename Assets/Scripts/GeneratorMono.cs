@@ -19,6 +19,9 @@ public class GeneratorMono : MonoBehaviour
     [SerializeField] private Button buyTen;
     [SerializeField] private Button buyHundred;
 
+    [SerializeField] private GameObject lockSprite;
+    private Animator animationComponent;
+
     private int purchaseAmount = 1;
 
     public GeneratorType generatorType;
@@ -39,6 +42,8 @@ public class GeneratorMono : MonoBehaviour
         production = Mathf.FloorToInt((generator.baseProduction * _quantity) * productionMultiplier);
         milestoneProgress.maxValue = nextMilestone;
         milestoneProgress.value = _quantity;
+
+        animationComponent = lockSprite.GetComponent<Animator>();
 
         // Achievements
         achievementSystem.SetProgress("Forging a new beginning", 1);
@@ -100,6 +105,11 @@ public class GeneratorMono : MonoBehaviour
     {
         if (CanUpgrade())
         {
+            if (_quantity == 0)
+            {
+                animationComponent.SetTrigger("Unlock");
+            }
+            
             _quantity += purchaseAmount;
             UIController.UpdatePurchased();
             production = Mathf.FloorToInt((generator.baseProduction * _quantity) * productionMultiplier);
