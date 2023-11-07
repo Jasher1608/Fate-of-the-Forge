@@ -108,6 +108,7 @@ public class GeneratorMono : MonoBehaviour
             if (_quantity == 0)
             {
                 animationComponent.SetTrigger("Unlock");
+                Destroy(lockSprite, 1.1f);
             }
             
             _quantity += purchaseAmount;
