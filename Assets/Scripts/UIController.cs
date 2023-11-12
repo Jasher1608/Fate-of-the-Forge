@@ -55,10 +55,10 @@ public class UIController : MonoBehaviour
 
     public void UpdateOwned()
     {
-        ironBarOwnedText.text = "Owned: " + InventoryManager.ironBars.ToString("#,0");
-        copperBarOwnedText.text = "Owned: " + InventoryManager.copperBars.ToString("#,0");
-        silverBarOwnedText.text = "Owned: " + InventoryManager.silverBars.ToString("#,0");
-        goldBarOwnedText.text = "Owned: " + InventoryManager.goldBars.ToString("#,0");
+        ironBarOwnedText.text = " " + InventoryManager.ironBars.ToString("#,0");
+        copperBarOwnedText.text = " " + InventoryManager.copperBars.ToString("#,0");
+        silverBarOwnedText.text = " " + InventoryManager.silverBars.ToString("#,0");
+        goldBarOwnedText.text = " " + InventoryManager.goldBars.ToString("#,0");
         shopUIController.UpdateSeller();
     }
 
