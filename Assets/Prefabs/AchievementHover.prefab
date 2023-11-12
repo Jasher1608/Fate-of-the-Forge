@@ -67,8 +67,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Achievement Name
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: bf5347dac5b12bc4c9f6dfc158ec0dbb, type: 2}
+  m_sharedMaterial: {fileID: -7232555372256546873, guid: bf5347dac5b12bc4c9f6dfc158ec0dbb, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -282,8 +282,8 @@ MonoBehaviour:
     like tonight. No need to light a night-light on a light night like tonight. No
     need to light a night-light on a light night like tonight.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: bf5347dac5b12bc4c9f6dfc158ec0dbb, type: 2}
+  m_sharedMaterial: {fileID: -7232555372256546873, guid: bf5347dac5b12bc4c9f6dfc158ec0dbb, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
