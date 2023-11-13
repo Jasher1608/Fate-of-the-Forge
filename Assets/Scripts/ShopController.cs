@@ -46,6 +46,36 @@ public class ShopController : MonoBehaviour
         UIController.UpdateOwned();
         UIController.UpdateMoney();
     }
+
+    public void SellAll()
+    {
+        switch (sellingType)
+        {
+            case SellingType.Iron:
+                InventoryManager.ironBars -= (int)slider.maxValue;
+                InventoryManager.money += (slider.maxValue * generator.value) * barPriceMultiplier;
+                slider.value = 0;
+                break;
+            case SellingType.Copper:
+                InventoryManager.copperBars -= (int)slider.maxValue;
+                InventoryManager.money += (slider.maxValue * generator.value) * barPriceMultiplier;
+                slider.value = 0;
+                break;
+            case SellingType.Silver:
+                InventoryManager.silverBars -= (int)slider.maxValue;
+                InventoryManager.money += (slider.maxValue * generator.value) * barPriceMultiplier;
+                slider.value = 0;
+                break;
+            case SellingType.Gold:
+                InventoryManager.goldBars -= (int)slider.maxValue;
+                InventoryManager.money += (slider.maxValue * generator.value) * barPriceMultiplier;
+                slider.value = 0;
+                break;
+        }
+        shopUIController.UpdateSeller();
+        UIController.UpdateOwned();
+        UIController.UpdateMoney();
+    }
 }
 
 public enum SellingType
